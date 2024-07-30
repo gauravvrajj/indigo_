@@ -6,7 +6,7 @@ importScripts('https://www.gstatic.com/firebasejs/9.0.0/firebase-messaging-compa
 // Initialize the Firebase app in the service worker by passing the generated config
 // changing it 
 const firebaseConfig = {
-    // 
+    // api key etc. of firebase
   };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
