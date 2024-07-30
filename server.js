@@ -83,7 +83,7 @@ async function sendNotifications() {
 
 
 // MongoDB Connection
-mongoose.connect(, {
+mongoose.connect(, {      //here database connection string will be added (i have removed it)
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
