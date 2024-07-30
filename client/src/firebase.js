@@ -4,7 +4,7 @@ import { initializeApp } from 'firebase/app';
 import { getMessaging, getToken, onMessage } from 'firebase/messaging';
 
 const firebaseConfig = {
-  
+  // here firebase api key etc. have to be added
 };
 
 // Initialize Firebase
@@ -16,7 +16,7 @@ const messaging = getMessaging(app);
 // Function to request permission for notifications
 export const requestFirebaseNotificationPermission = () => {
   return new Promise((resolve, reject) => {
-    getToken(messaging, { vapidKey: '' })
+    getToken(messaging, { vapidKey: '' }) // firebase vapidKey has to be added
       .then((currentToken) => {
         if (currentToken) {
           console.log('Current token:', currentToken);
